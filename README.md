@@ -1,30 +1,104 @@
-# DHCP Landing Page
+# DHCP (Digital Help Connected Platforms) - Enterprise Website
 
-*Automatically synced with your [v0.dev](https://v0.dev) deployments*
-
-[![Deployed on Vercel](https://img.shields.io/badge/Deployed%20on-Vercel-black?style=for-the-badge&logo=vercel)](https://vercel.com/oussama-abderraouf-attias-projects/v0-dhcp-landing-page)
-[![Built with v0](https://img.shields.io/badge/Built%20with-v0.dev-black?style=for-the-badge)](https://v0.dev/chat/projects/dr4FbHMh7TH)
+Welcome to the official repository of the DHCP website!
 
 ## Overview
 
-This repository will stay in sync with your deployed chats on [v0.dev](https://v0.dev).
-Any changes you make to your deployed app will be automatically pushed to this repository from [v0.dev](https://v0.dev).
+**DHCP** (Digital Help Connected Platforms) is an Algerian company founded in 2022, specializing in the development of customized IT solutions to modernize university services and support the country's digital transformation.
+
+Our mission is clear: to connect actors and services to build a smart, fully Algerian digital future.
+
+## Introduction
+
+Digitalization has profoundly reshaped our way of life and work. DHCP positions itself as an innovative player in this digital revolution, relying on a committed and multidisciplinary team.
+
+We provide reliable and tailored solutions to facilitate access to university services such as accommodation, transport, scholarship management, and more.
+
+---
+
+## Our Values
+
+- **Innovation**: Exploring new paths and offering modern, effective solutions.
+- **National Commitment**: Actively contributing to Algeria's digital transformation.
+- **Quality & Efficiency**: Optimizing time and resources to maximize results.
+- **Transparency**: Promoting honest exchanges and building trustful relationships.
+
+---
+
+## Our Areas of Expertise
+
+- **Creation of Customized Digital Solutions**: Innovative platforms for management and digital communication.
+- **Smart Data Utilization**: Data analysis and artificial intelligence for informed decision-making.
+- **Development of Integrated Management Tools**: ERP, CRM, and other business solutions tailored to each structure's needs.
+- **Digitalization and Modernization Support**: Integrating new technologies for agile and evolving environments.
+- **Skill Development and Personalized Support**: Ongoing training and tailored support for full autonomy.
+
+---
+
+## Team
+
+### Meet our Dynamic Team
+
+- **ATTIA OUSSAMA ABDERRAOUF**  
+  Project Manager
+
+- **BOUKABOUS MALEK**  
+  UI/UX Designer
+
+- **BENATMANE AMIRA**  
+  Quality Tester
+
+- **BELHADJ MEHDI ISHAQ**  
+  Engineer specialized in AI
+
+- **HAOUAS YASMINE**  
+  Systems and Networks Manager
+
+- **MAHDI ALI**  
+  Software Development Engineer
+
+- **BELHADJ MARIA**  
+  Marketing and Communication Manager
+
+- **DOULATE SEROUI BOUTAINA**  
+  Finance and Accounting Manager
+
+
+
+---
+
+## Technologies Used
+
+- Next.js / React
+- TypeScript
+- Tailwind CSS
+- Node.js
+- REST API / GraphQL
+- Relational and NoSQL Databases
+
+---
 
 ## Deployment
 
-Your project is live at:
+The website is designed for easy deployment on modern platforms like:
 
-**[https://vercel.com/oussama-abderraouf-attias-projects/v0-dhcp-landing-page](https://vercel.com/oussama-abderraouf-attias-projects/v0-dhcp-landing-page)**
+- Vercel
+- Netlify
+- AWS
+- DigitalOcean
 
-## Build your app
+Detailed deployment instructions will be provided soon.
 
-Continue building your app on:
+---
 
-**[https://v0.dev/chat/projects/dr4FbHMh7TH](https://v0.dev/chat/projects/dr4FbHMh7TH)**
+## Contact
 
-## How It Works
+For any inquiries or collaborations:
 
-1. Create and modify your project using [v0.dev](https://v0.dev)
-2. Deploy your chats from the v0 interface
-3. Changes are automatically pushed to this repository
-4. Vercel deploys the latest version from this repository
+- **Email**: [contact@dhcp.dz](mailto:contact@dhcp.dz)
+- **Phone**: +213 XX XX XX XX
+- **Address**: Algiers, Algeria
+
+---
+
+**© 2025 DHCP - All rights reserved.**
