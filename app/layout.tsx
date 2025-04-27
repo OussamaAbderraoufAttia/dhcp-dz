@@ -1,3 +1,4 @@
+// Remove 'use client' from here
 import type { Metadata } from 'next'
 import './globals.css'
 

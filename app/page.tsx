@@ -1,3 +1,4 @@
+"use client";
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
@@ -29,17 +30,15 @@ export default function Home() {
       <NavBar />
 
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-r from-blue-600 to-blue-800 text-white py-20 md:py-32 overflow-hidden">
-        <div className="absolute inset-0 opacity-10">
-          <div
-            className="absolute inset-0"
-            style={{
-              backgroundImage: "url('/placeholder.svg?height=800&width=1600')",
-              backgroundSize: "cover",
-              backgroundPosition: "center",
-            }}
-          ></div>
-        </div>
+      <section className="relative bg-gradient-to-r from-[#289dd2] to-blue-800 text-white py-20 md:py-32 overflow-hidden">
+      <div 
+  className="absolute inset-0 opacity-10 bg-cover bg-center"
+  style={{
+    backgroundImage: "url('/landing-image.png')", // Path to the image in the public folder
+  }}
+></div>
+
+
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-3xl">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight animate-fade-in">
@@ -48,7 +47,7 @@ export default function Home() {
             <p className="text-xl md:text-2xl mb-8 text-blue-100">
               Transforming university services through innovative technology
             </p>
-            <Button size="lg" className="bg-white text-blue-700 hover:bg-blue-50 font-semibold text-lg px-8 py-6">
+            <Button className="bg-white text-blue-700 hover:bg-blue-50 font-semibold text-lg px-8 py-6">
               Discover Our Solutions
               <ArrowRight className="ml-2 h-5 w-5" />
             </Button>
