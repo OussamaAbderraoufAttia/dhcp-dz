@@ -32,11 +32,11 @@ export default function Home() {
       {/* Hero Section */}
       <section className="relative bg-gradient-to-r from-[#289dd2] to-blue-800 text-white py-20 md:py-32 overflow-hidden">
       <div 
-  className="absolute inset-0 opacity-10 bg-cover bg-center"
-  style={{
-    backgroundImage: "url('/landing-image.png')", // Path to the image in the public folder
-  }}
-></div>
+        className="absolute inset-0 opacity-10 bg-cover bg-center"
+        style={{
+          backgroundImage: "url('/landing-image.png')", // Path to the image in the public folder
+        }}
+      ></div>
 
 
         <div className="container mx-auto px-4 relative z-10">
@@ -221,19 +221,19 @@ export default function Home() {
             <TeamMember
               name="Oussama Abderraouf ATTIA"
               role="Project Manager"
-              image="/placeholder.svg?height=300&width=300"
+              image="/person.png?svg?height=300&width=300"
             />
-            <TeamMember name="Amira BEN ATMANE" role="Quality Tester" image="/placeholder.svg?height=300&width=300" />
-            <TeamMember name="Maria BELHADJ" role="Marketing Manager" image="/placeholder.svg?height=300&width=300" />
-            <TeamMember name="Ali MAHDI" role="Software Engineer" image="/placeholder.svg?height=300&width=300" />
+            <TeamMember name="Amira BEN ATMANE" role="Quality Tester" image="/person.png?height=300&width=300" />
+            <TeamMember name="Maria BELHADJ" role="Marketing Manager" image="/person.png?height=300&width=300" />
+            <TeamMember name="Ali MAHDI" role="Software Engineer" image="/person.png?height=300&width=300" />
             <TeamMember
               name="Boutaina DOULATE SEROURI"
               role="Finance Manager"
-              image="/placeholder.svg?height=300&width=300"
+              image="/person.png?height=300&width=300"
             />
-            <TeamMember name="Malek BOUKABOUS" role="UI/UX Designer" image="/placeholder.svg?height=300&width=300" />
-            <TeamMember name="Yasmine HAOUAS" role="Systems Manager" image="/placeholder.svg?height=300&width=300" />
-            <TeamMember name="Ishaq Belhadj MAHDI" role="AI Specialist" image="/placeholder.svg?height=300&width=300" />
+            <TeamMember name="Malek BOUKABOUS" role="UI/UX Designer" image="person.png?height=300&width=300" />
+            <TeamMember name="Yasmine HAOUAS" role="Systems Manager" image="/person.png?height=300&width=300" />
+            <TeamMember name="Ishaq Belhadj MAHDI" role="AI Specialist" image="/person.png?height=300&width=300" />
           </div>
         </div>
       </section>
@@ -249,13 +249,13 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8 items-center">
-            <ClientLogo image="/placeholder.svg?height=100&width=200" />
-            <ClientLogo image="/placeholder.svg?height=100&width=200" />
-            <ClientLogo image="/placeholder.svg?height=100&width=200" />
-            <ClientLogo image="/placeholder.svg?height=100&width=200" />
-            <ClientLogo image="/placeholder.svg?height=100&width=200" />
-            <ClientLogo image="/placeholder.svg?height=100&width=200" />
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8 items-center">
+            <ClientLogo image="/wizara.png" />
+            <ClientLogo image="/wizara2.png" />
+            <ClientLogo image="/wizara3.png" />
+            <ClientLogo image="/djezzy.png" />
+            <ClientLogo image="/hiss.png" />
+
           </div>
         </div>
       </section>
