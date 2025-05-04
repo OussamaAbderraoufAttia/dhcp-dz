@@ -5,7 +5,7 @@ import { Textarea } from "@/components/ui/textarea"
 import {
   ArrowRight,
   Building2,
-  Calendar,
+  Calendar, 
   DollarSign,
   Lightbulb,
   Mail,
@@ -15,13 +15,15 @@ import {
   Users,
 } from "lucide-react"
 import Link from "next/link"
-import { StatCard } from "@/components/stat-card"
-import { ServiceCard } from "@/components/service-card"
-import { ProjectCard } from "@/components/project-card"
-import { TeamMember } from "@/components/team-member"
-import { ClientLogo } from "@/components/client-logo"
-import { NavBar } from "@/components/nav-bar"
-import { Footer } from "@/components/footer"
+import AboutUs from "@/components/sections/aboutus";
+import Projects from "@/components/sections/projects";
+import Services from "@/components/sections/services";
+import Team from "@/components/sections/team";
+import { ClientLogo } from "@/components/sub/client-logo"
+import { NavBar } from "@/components/sub/nav-bar"
+import { Footer } from "@/components/sub/footer"
+
+
 
 export default function Home() {
   return (
@@ -56,187 +58,15 @@ export default function Home() {
       </section>
 
       {/* About Us Section */}
-      <section id="about" className="py-20 bg-white">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">About Us</h2>
-            <div className="w-20 h-1 bg-blue-600 mx-auto mb-8"></div>
-            <p className="max-w-3xl mx-auto text-lg text-gray-600">
-              Founded in 2022, DHCP is an Algerian technology company created by passionate young professionals with the
-              dream of building a 100% Algerian digital future that meets international standards.
-            </p>
-          </div>
+        <AboutUs />
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-            <div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-6">Our Values</h3>
-              <ul className="space-y-4">
-                <li className="flex items-start">
-                  <div className="bg-blue-100 p-2 rounded-full mr-4 mt-1">
-                    <Lightbulb className="h-5 w-5 text-blue-600" />
-                  </div>
-                  <div>
-                    <h4 className="font-semibold text-lg text-gray-900">Innovation</h4>
-                    <p className="text-gray-600">Constantly pushing boundaries to create cutting-edge solutions.</p>
-                  </div>
-                </li>
-                <li className="flex items-start">
-                  <div className="bg-blue-100 p-2 rounded-full mr-4 mt-1">
-                    <Building2 className="h-5 w-5 text-blue-600" />
-                  </div>
-                  <div>
-                    <h4 className="font-semibold text-lg text-gray-900">National Commitment</h4>
-                    <p className="text-gray-600">Dedicated to building a digital future for Algeria.</p>
-                  </div>
-                </li>
-                <li className="flex items-start">
-                  <div className="bg-blue-100 p-2 rounded-full mr-4 mt-1">
-                    <Search className="h-5 w-5 text-blue-600" />
-                  </div>
-                  <div>
-                    <h4 className="font-semibold text-lg text-gray-900">Quality & Efficiency</h4>
-                    <p className="text-gray-600">Delivering high-quality solutions that drive real results.</p>
-                  </div>
-                </li>
-                <li className="flex items-start">
-                  <div className="bg-blue-100 p-2 rounded-full mr-4 mt-1">
-                    <Users className="h-5 w-5 text-blue-600" />
-                  </div>
-                  <div>
-                    <h4 className="font-semibold text-lg text-gray-900">Transparency</h4>
-                    <p className="text-gray-600">Building trust through open communication and honest practices.</p>
-                  </div>
-                </li>
-              </ul>
-            </div>
+      {/*Services Section*/}
+      <Services />
 
-            <div className="grid grid-cols-2 gap-6">
-              <StatCard icon={<Users className="h-8 w-8 text-blue-600" />} value="69" label="Employees" />
-              <StatCard icon={<Calendar className="h-8 w-8 text-blue-600" />} value="2022" label="Founded" />
-              <StatCard
-                icon={<DollarSign className="h-8 w-8 text-blue-600" />}
-                value="145M DZD"
-                label="Annual Revenue"
-              />
-              <StatCard icon={<Lightbulb className="h-8 w-8 text-blue-600" />} value="6M DZD" label="R&D Budget" />
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Services Section */}
-      <section id="services" className="py-20 bg-gray-50">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Our Services</h2>
-            <div className="w-20 h-1 bg-blue-600 mx-auto mb-8"></div>
-            <p className="max-w-3xl mx-auto text-lg text-gray-600">
-              We provide comprehensive digital solutions tailored to the unique needs of educational institutions.
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <ServiceCard
-              title="Custom Digital Solutions"
-              description="Creating innovative platforms designed to optimize management and facilitate digital communication."
-              icon="Cpu"
-            />
-            <ServiceCard
-              title="Intelligent Data Exploitation"
-              description="Using data analysis and AI to transform raw information into useful knowledge for decision-making."
-              icon="BarChart"
-            />
-            <ServiceCard
-              title="Integrated Management Tools"
-              description="Implementing ERP, CRM, and other business solutions tailored to each organization's specific requirements."
-              icon="Settings"
-            />
-            <ServiceCard
-              title="Digital Transformation Support"
-              description="Integrating new technologies into strategies for agile and evolving environments."
-              icon="RefreshCw"
-            />
-            <ServiceCard
-              title="Skills Development"
-              description="Ensuring continuous training for teams to fully master deployed tools."
-              icon="GraduationCap"
-            />
-            <ServiceCard
-              title="Personalized Support"
-              description="Providing ongoing assistance to achieve sustainable autonomy with new technologies."
-              icon="HeadphonesIcon"
-            />
-          </div>
-        </div>
-      </section>
-
-      {/* Projects Section */}
-      <section id="projects" className="py-20 bg-white">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Featured Projects</h2>
-            <div className="w-20 h-1 bg-blue-600 mx-auto mb-8"></div>
-            <p className="max-w-3xl mx-auto text-lg text-gray-600">
-              Explore our innovative solutions that are transforming educational institutions.
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
-            <ProjectCard
-              title="Digital Restaurant System"
-              description="A comprehensive system for managing university residence dining services."
-              image="/placeholder.svg?height=400&width=600"
-            />
-            <ProjectCard
-              title="Waste Management App"
-              description="Mobile application for efficient household waste management and recycling."
-              image="/placeholder.svg?height=400&width=600"
-            />
-            <ProjectCard
-              title="Scholarship Management Portal"
-              description="Streamlined platform for managing university student scholarships."
-              image="/placeholder.svg?height=400&width=600"
-            />
-            <ProjectCard
-              title="Mobile Subscription Platform"
-              description="Comprehensive solution for managing mobile service subscriptions."
-              image="/placeholder.svg?height=400&width=600"
-            />
-          </div>
-        </div>
-      </section>
-
+      {/* Projects Section*/}
+      <Projects />
       {/* Team Section */}
-      <section id="team" className="py-20 bg-gray-50">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Our Team</h2>
-            <div className="w-20 h-1 bg-blue-600 mx-auto mb-8"></div>
-            <p className="max-w-3xl mx-auto text-lg text-gray-600">
-              Meet the talented professionals behind our innovative solutions.
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-            <TeamMember
-              name="Oussama Abderraouf ATTIA"
-              role="Project Manager"
-              image="/person.png?svg?height=300&width=300"
-            />
-            <TeamMember name="Amira BEN ATMANE" role="Quality Tester" image="/person.png?height=300&width=300" />
-            <TeamMember name="Maria BELHADJ" role="Marketing Manager" image="/person.png?height=300&width=300" />
-            <TeamMember name="Ali MAHDI" role="Software Engineer" image="/person.png?height=300&width=300" />
-            <TeamMember
-              name="Boutaina DOULATE SEROURI"
-              role="Finance Manager"
-              image="/person.png?height=300&width=300"
-            />
-            <TeamMember name="Malek BOUKABOUS" role="UI/UX Designer" image="person.png?height=300&width=300" />
-            <TeamMember name="Yasmine HAOUAS" role="Systems Manager" image="/person.png?height=300&width=300" />
-            <TeamMember name="Ishaq Belhadj MAHDI" role="AI Specialist" image="/person.png?height=300&width=300" />
-          </div>
-        </div>
-      </section>
+        <Team />
 
       {/* Clients Section */}
       <section className="py-20 bg-white">
