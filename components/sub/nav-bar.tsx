@@ -7,7 +7,10 @@ export function NavBar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
 
-  const linkClass = "text-gray-700 hover:text-blue-600 font-medium";
+  // Modified linkClass for the animated underline
+  const linkClass = "relative text-gray-700 hover:text-blue-600 font-medium transition-colors duration-300 ease-in-out";
+  const underlineClass = "after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[2px] after:bg-blue-600 after:transition-all after:duration-300 ease-in-out hover:after:w-full";
+
 
   return (
     <header className="bg-white shadow-sm sticky top-0 z-50">
@@ -20,12 +23,12 @@ export function NavBar() {
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-8">
-            <Link href="/" className={linkClass}>Home</Link>
-            <Link href="#about" className={linkClass}>About Us</Link>
-            <Link href="#services" className={linkClass}>Services</Link>
-            <Link href="#projects" className={linkClass}>Projects</Link>
-            <Link href="#team" className={linkClass}>Team</Link>
-            <Link href="#contact" className={linkClass}>Contact</Link>
+            <Link href="/" className={`${linkClass} ${underlineClass}`}>Home</Link>
+            <Link href="#about" className={`${linkClass} ${underlineClass}`}>About Us</Link>
+            <Link href="#services" className={`${linkClass} ${underlineClass}`}>Services</Link>
+            <Link href="#projects" className={`${linkClass} ${underlineClass}`}>Projects</Link>
+            <Link href="#team" className={`${linkClass} ${underlineClass}`}>Team</Link>
+            <Link href="#contact" className={`${linkClass} ${underlineClass}`}>Contact</Link>
           </nav>
 
           {/* Desktop Custom Button */}
@@ -51,12 +54,12 @@ export function NavBar() {
         {isMenuOpen && (
           <div className="md:hidden py-4 pb-6">
             <nav className="flex flex-col space-y-4">
-              <Link href="/" className={linkClass} onClick={() => setIsMenuOpen(false)}>Home</Link>
-              <Link href="#about" className={linkClass} onClick={() => setIsMenuOpen(false)}>About Us</Link>
-              <Link href="#services" className={linkClass} onClick={() => setIsMenuOpen(false)}>Services</Link>
-              <Link href="#projects" className={linkClass} onClick={() => setIsMenuOpen(false)}>Projects</Link>
-              <Link href="#team" className={linkClass} onClick={() => setIsMenuOpen(false)}>Team</Link>
-              <Link href="#contact" className={linkClass} onClick={() => setIsMenuOpen(false)}>Contact</Link>
+              <Link href="/" className={`${linkClass} ${underlineClass}`} onClick={() => setIsMenuOpen(false)}>Home</Link>
+              <Link href="#about" className={`${linkClass} ${underlineClass}`} onClick={() => setIsMenuOpen(false)}>About Us</Link>
+              <Link href="#services" className={`${linkClass} ${underlineClass}`} onClick={() => setIsMenuOpen(false)}>Services</Link>
+              <Link href="#projects" className={`${linkClass} ${underlineClass}`} onClick={() => setIsMenuOpen(false)}>Projects</Link>
+              <Link href="#team" className={`${linkClass} ${underlineClass}`} onClick={() => setIsMenuOpen(false)}>Team</Link>
+              <Link href="#contact" className={`${linkClass} ${underlineClass}`} onClick={() => setIsMenuOpen(false)}>Contact</Link>
               {/* Mobile Custom Button */}
               <button className="bg-[#289DD2] hover:bg-[#01003B] text-white font-medium py-2 px-4 rounded-lg w-full transition duration-300">
                 Get a Quote
