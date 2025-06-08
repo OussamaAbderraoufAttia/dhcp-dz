@@ -44,6 +44,8 @@ export default function Home() {
   // Toggle dark mode handler
   const toggleDarkMode = () => {
     const newMode = !isDark;
+    document.documentElement.classList.toggle("dark");
+    window.dispatchEvent(new Event("dark-mode-change"));
     setIsDark(newMode);
     if (newMode) {
       document.documentElement.classList.add("dark");
