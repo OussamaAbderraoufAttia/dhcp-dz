@@ -83,6 +83,7 @@ export default function Home() {
         Transforming university services through innovative technology
       </p>
 <button
+onClick={() => window.scrollTo({ top: document.getElementById("services")?.offsetTop, behavior: "smooth" })}
       className="
         bg-white 
         text-blue-700 
@@ -92,7 +93,7 @@ export default function Home() {
         px-8 
         py-6 
 
-        dark:bg-blue-700 
+        dark:bg-[#111827]
         dark:text-white 
         dark:hover:bg-blue-800
         rounded

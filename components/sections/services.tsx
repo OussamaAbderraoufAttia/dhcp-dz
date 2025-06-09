@@ -52,7 +52,7 @@ const Services = () => {
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-gray-100 mb-4">
             Our Services
           </h2>
-          <div className="w-20 h-1 bg-accent mx-auto mb-8 rounded"></div>
+          <div className="w-20 h-1 bg-blue-600 mx-auto mb-8"></div>
           <p className="max-w-3xl mx-auto text-lg text-gray-600 dark:text-gray-300">
             We provide comprehensive digital solutions tailored to the unique needs of educational institutions.
           </p>
